@@ -35,7 +35,7 @@
                         <div class="b-mobile">
                             <span>Comprar</span>
                         </div>
-                        <div class="fechar">
+                        <div class="fechar" id="close">
                             <img src="./assets/letra-x.png" alt="">
                         </div>
                     </ul>
@@ -78,9 +78,12 @@
     <script>
         const pegar = document.getElementById('barra');
         const mostrar = document.getElementById('mostrar');
-        pegar.addEventListener('click', ()=>{
-            mostrar.classList.add("colocar");            
-        });
+        const toggle = ()=>{
+            mostrar.classList.toggle("colocar");            
+        }
+        const fechar = document.getElementById('close');
+        pegar.addEventListener('click', toggle);
+        fechar.addEventListener('click', toggle);
         
 
     </script>
