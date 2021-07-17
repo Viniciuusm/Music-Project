@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="fone">
+                <img src="/assets/Fone-de-ouvido.png" alt="">
+            </div>
+            <div class="img">
+                <h1><a href="">Logo</a></h1>
+            </div>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Ficha técnica</a></li>
+                    <li><a href="">Avaliações</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <div class="menu">
+                    <img id="barra" src="/assets/menu-de-tres-linhas.png" alt="">
+                </div>
+                <div id="mostrar" class="mobile-m">
+                    <ul >
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Ficha técnica</a></li>
+                        <li><a href="">Avaliações</a></li>
+                        <div class="b-mobile">
+                            <span>Comprar</span>
+                        </div>
+                        <div class="fechar">
+                            <img src="/assets/letra-x.png" alt="">
+                        </div>
+                    </ul>
+                
+                </div>
+            </nav>
+            <div class="botao">
+                <p>Comprar</p>
+            </div>
+            <div class="texto">
+                <h2><span>Sinta</span> a música</h2>
+                <p>Novo wireless headfone bit love com 100% de cancelamento de ruído externo</p>
+                <div class="texto-botoes">
+                    <div class="t-botoes">
+                        <span>Compre já</span>
+                    </div>
+                    <div class="b-video">
+                        <span>Assistir o vídeo<img src="/assets/botao-play.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+            <div class="borda"></div>
+            <div class="redes-sociais">
+                <div class="facebook">
+                    <a href=""><img src="/assets/facebook.png" alt="facebook"></a>
+                </div>
+                <div class="intagram">
+                    <a href=""><img src="/assets/instagram.png" alt="instagram"></a>
+                </div>
+                <div class="twitter">
+                    <a href=""><img src="/assets/twitter.png" alt="twitter"></a>
+                </div>
+                <div class="whatsapp">
+                    <a href=""><img src="/assets/whatsapp.png" alt="whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="box"></section>
+    <script>
+        const pegar = document.getElementById('barra');
+        const mostrar = document.getElementById('mostrar');
+        pegar.addEventListener('click', ()=>{
+            mostrar.classList.add("colocar");            
+        });
+        
+
+    </script>
+</body>
+</html>
